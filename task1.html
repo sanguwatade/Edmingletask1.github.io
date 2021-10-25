@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1 | demo 3</title>
+    <link rel="stylesheet" href="cs/style.css">
+    
+     <script type="text/javascript">
+         
+    function togglemenu()
+        {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    
+
+</head>
+<body>
+
+   <div class="container">
+    <div class="left">
+        <embed class="pdf" src="https://mozilla.github.io/pdf.js/web/viewer.html" type="application/pdf">
+        
+    </div>
+    
+    <div class="right">
+        <div id="sidebar" onclick="togglemenu()" >
+            <div class="s-btn">
+                <span> Videos &uarr; </span>       
+            </div>
+            <ul>
+                <li> <div class="videos-img">
+            <img class="small-img" src="https://i.ibb.co/h9xhFxN/Screenshot-2021-10-08-at-3-26-26-PM.png">
+            <img src="./images/play-btn.png" class="play-btn" onclick="playVideo('http://techslides.com/demos/sample-videos/small.mp4')">
+            </div>
+               1.Video</li>
+               
+                <li><div class="videos-img">
+            <img class="small-img" src="https://i.ibb.co/h9xhFxN/Screenshot-2021-10-08-at-3-26-26-PM.png" >
+            <img src="./images/play-btn.png" class="play-btn" onclick="playVideo('http://techslides.com/demos/sample-videos/small.mp4')">
+            </div>
+              2.Video</li>
+               
+            <li> <div class="videos-img">
+            <img class="small-img" src="https://i.ibb.co/h9xhFxN/Screenshot-2021-10-08-at-3-26-26-PM.png">
+            <img src="./images/play-btn.png" class="play-btn" onclick="playVideo('http://techslides.com/demos/sample-videos/small.mp4')">
+            </div>
+            3.Video</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="video-player" id="videoPlayer">
+    <video width="700px" controls id="myVideo" muted>
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+        </video>
+        <img src="./images/close-btn.png" class="close-btn" width="30px" onclick="closeVideo()">
+    </div>
+    
+     <script src="./js/demo.js">
+    </script>
+
+</body>
+</html>
